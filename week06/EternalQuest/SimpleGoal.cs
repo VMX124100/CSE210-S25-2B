@@ -10,7 +10,6 @@ public class SimpleGoal:Goal
 
    public SimpleGoal(string type, string name, string description, string points, string check):base(type, name, description, points){
       _checked = bool.Parse(check);
-
    }
 
    public override void DisplayGoal() {

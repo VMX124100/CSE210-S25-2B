@@ -5,9 +5,11 @@ public class ChecklistGoal:Goal
     private int _bonusPoints;
     private int _counter;
     private int _totalCount;
+
     public ChecklistGoal(){
         
     }
+    
     public ChecklistGoal(string type, string name, string description, string points, string counter, string totalCount, string bonusPoints):base(type, name, description, points){
         _counter = int.Parse(counter);
         _totalCount = int.Parse(totalCount);
@@ -25,7 +27,6 @@ public class ChecklistGoal:Goal
         _totalCount = int.Parse(Console.ReadLine());
         Console.WriteLine("What is the bonus for accomplishin that many times?");
         _bonusPoints = int.Parse(Console.ReadLine());
-
     }
 
     public override void DisplayGoal()
@@ -63,7 +64,5 @@ public class ChecklistGoal:Goal
         {
             return 0;
         }
-        
     }
-
 }

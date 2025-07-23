@@ -7,6 +7,7 @@ public class Goal
     protected int _points;
 
     public Goal() {
+        
     }
 
     public Goal(string type, string name, string description, string points){
@@ -23,7 +24,6 @@ public class Goal
         _type = typeOfGoal;
     }
 
-
     public virtual void SetGoal(){
 
         Console.WriteLine("What is the name of your goal?");
@@ -32,7 +32,6 @@ public class Goal
         _description = Console.ReadLine();
         Console.WriteLine("What is the amount of points associated with this goal?");
         _points = int.Parse(Console.ReadLine());
-
     }
 
     public virtual void DisplayGoal() {
